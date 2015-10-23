@@ -1,5 +1,9 @@
 
 def find_nth_element(list,n,start=None,end=None):
+    # Additional checks to see the paramters are Ok
+    if n < 1 or n > len(list):
+        return None
+    # For the first call to set the start and end 
     if  start is None:
         start = 0
     if end is None:
